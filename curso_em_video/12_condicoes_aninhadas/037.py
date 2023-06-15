@@ -57,7 +57,7 @@ elif opcao == 3:
             # Se hexa >= 10
             resto.append(hexadecimal.get(hexa))
             # A variável hexa quando gera um número entre 10 e 15, procura esse valor no dicionário hexadecimal
-            # Foi utilizado o método het para procurar pelo número de 10 a 15 e devolver a letra que corresponde ao número
+            # Foi utilizado o método get para procurar pelo número de 10 a 15 e devolver a letra que corresponde ao número
         else:
             resto.append(num_int % 16)
         resultado = num_int // 16

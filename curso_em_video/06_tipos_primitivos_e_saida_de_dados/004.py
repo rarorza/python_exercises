@@ -11,4 +11,5 @@ print('É alfabético? ', everything.isalpha())
 print('É alfanumérico? ', everything.isalnum())
 print('Está em maiúsculas? ', everything.isupper())
 print('Está em minúscula? ', everything.islower())
-print('Está capitalizada? ', everything.istitle()) # istitle() retorna true se a primeira letra da string é maiúscula
+print('Está capitalizada? ', everything.istitle())
+# istitle() retorna true se a primeira letra da string é maiúscula
