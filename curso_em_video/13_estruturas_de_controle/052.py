@@ -1,4 +1,5 @@
-# Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
+# Faça um programa que leia um número inteiro e diga se ele é
+# ou não um número primo.
 
 contador = 0
 lista_numeros = []
@@ -6,11 +7,16 @@ executando = True
 
 while executando:
     numero = int(input("Digite um número: "))
-    if numero >= 2:  # Para o número ser primmo ele tem que ser maior que 1
-        for divisor in range(1, numero + 1):  # loop para dividir o número pelo divisor
-            lista_numeros.append(f"{divisor}")  # adiciona o divisor em uma lista
-            if numero % divisor == 0:  # se o resta da divisão for igual a 0
-                contador += 1  # o contador irá somar +1
+    if numero >= 2:
+        # Para o número ser primo ele tem que ser maior que 1
+        for divisor in range(1, numero + 1):
+            # loop para dividir o número pelo divisor
+            lista_numeros.append(f"{divisor}")
+            # adiciona o divisor em uma lista
+            if numero % divisor == 0:
+                # se o resta da divisão for igual a 0
+                contador += 1
+                # o contador irá somar +1
                 lista_numeros.remove(f"{divisor}")
                 # o dividor dessa divisão é apagado da lista, a variável divisor
                 # está envolvida em um format string pois os números estão sendo

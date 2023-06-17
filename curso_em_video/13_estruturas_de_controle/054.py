@@ -19,4 +19,3 @@ for ano in anos:
 
 print(f"Ao todo tivemos {maior_idade} pessoa(s) maior(es) de idade")
 print(f"E {menor_idade} pessoa(s) menor(es) de idade")
-

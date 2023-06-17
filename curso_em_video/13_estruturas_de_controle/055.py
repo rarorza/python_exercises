@@ -1,5 +1,5 @@
-# Faça um programa que eleia o peso de cinco pessoas.
-# No final, mostre qual foi o maior e o menor peso lido.
+# Faça um programa que eleia o peso de cinco pessoas.No final, mostre qual foi
+# o maior e o menor peso lido.
 
 pesos = []
 
@@ -8,4 +8,3 @@ for pessoa in range(1, 5 + 1):
 
 print(f"O maior peso lido foi de {max(pesos)}")
 print(f"O menor peso lido foi de {min(pesos)}")
-

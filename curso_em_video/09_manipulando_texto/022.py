@@ -6,7 +6,9 @@
 
 nome = input("Digite seu nome completo: ")
 nome_sem_espacos = nome.replace(" ", "")
-# Seria possível utilizar o método count para subtrair os espaços do número total do len
+# Seria possível utilizar o método count para subtrair os espaços do número
+# total do len.
+#
 # ex: len(nome) - nome.count' '
 
 print(f"Seu nome em maiúsculas é {nome.lower()}")
