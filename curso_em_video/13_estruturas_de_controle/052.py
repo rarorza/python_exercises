@@ -1,5 +1,4 @@
-# Faça um programa que leia um número inteiro e diga se ele é
-# ou não um número primo.
+# Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
 
 contador = 0
 lista_numeros = []
@@ -18,13 +17,11 @@ while executando:
                 contador += 1
                 # o contador irá somar +1
                 lista_numeros.remove(f"{divisor}")
-                # o dividor dessa divisão é apagado da lista, a variável divisor
-                # está envolvida em um format string pois os números estão sendo
-                # armazenados como string na lista, pois deve-se utilizar o método
-                # remove() para apagar os itens
-                lista_numeros.insert(
-                    divisor, f"\033[1;31m{divisor}\033[m"
-                )  # adiciona novamente o divisor, porém agora na cor vermelha
+                # O divisor dessa divisão é apagado da lista, a variável divisor está envolvida em um format string,
+                # pois os números estão sendo armazenados como string na lista, pois deve-se utilizar o método remove()
+                # para apagar os itens.
+                lista_numeros.insert(divisor, f"\033[1;31m{divisor}\033[m")
+                # adiciona novamente o divisor, porém agora na cor vermelha
         for item in lista_numeros:
             # loop para printar na tela todos os itens da lista de itens
             print(f"{item}", end=" ")

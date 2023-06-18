@@ -1,5 +1,4 @@
-# Faça um programa que leia três números e mostre qual é o
-# maior e qual é o menor.
+# Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
 
 num1 = input("Primeiro valor: ")
 num2 = input("Segundo valor: ")

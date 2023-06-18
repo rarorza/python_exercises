@@ -1,6 +1,4 @@
-# Desenvolva um programa que leia o comprimento
-# de três retas e siga ao usuário se elas podem ou
-# não formar um triângulo
+# Desenvolva um programa que leia o comprimento de três retas e siga ao usuário se elas podem ou não formar um triângulo
 
 print("-=" * 10)
 print("Analisador de Triângulo")

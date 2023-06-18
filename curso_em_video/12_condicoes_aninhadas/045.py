@@ -1,5 +1,5 @@
-# Crie um programa que faça o computador jogar
-# pedra, papel e tesoura com você.
+# Crie um programa que faça o computador jogar pedra, papel e tesoura com você.
+
 import time
 import random
 

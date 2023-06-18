@@ -1,12 +1,9 @@
-# Escreva um programa que faça o computador "pensar" em um número
-# inteiro entre 0 e 5.
-# e peça para o usuário tentar descobrir qual foi número escolhido
-# pelo computador.
-# O programa deverá escrever na tela se o usuário venceu ou perdeu.
+# Escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5. e peça para o usuário tentar
+# descobrir qual foi número escolhido pelo computador. O programa deverá escrever na tela se o usuário venceu ou perdeu.
 
-import random
+from random import randint
 
-numero_secreto = random.randint(1, 5)  # parecido com o random.ranged
+numero_secreto = randint(1, 5)  # parecido com o random.ranged
 print("Vou pensar em um número entre 0 e 5. Tenten adivinhar...")
 chute = int(input("Em que número eu pensei? "))
 print("PROCESSANDO...")
