@@ -17,9 +17,9 @@ while executando:
                 contador += 1
                 # o contador irá somar +1
                 lista_numeros.remove(f"{divisor}")
-                # O divisor dessa divisão é apagado da lista, a variável divisor está envolvida em um format string,
-                # pois os números estão sendo armazenados como string na lista, pois deve-se utilizar o método remove()
-                # para apagar os itens.
+                # O divisor dessa divisão é apagado da lista, a variável divisor está envolvida
+                # em um format string, pois os números estão sendo armazenados como string na
+                # lista, pois deve-se utilizar o método remove() para apagar os itens.
                 lista_numeros.insert(divisor, f"\033[1;31m{divisor}\033[m")
                 # adiciona novamente o divisor, porém agora na cor vermelha
         for item in lista_numeros:
@@ -27,8 +27,8 @@ while executando:
             print(f"{item}", end=" ")
 
         if contador == 2:
-            # se o contador for igual a 2, então o número é PRIMO, pois só foi
-            # possível fazer a divisão inteira com 1 e o próprio número
+            # se o contador for igual a 2, então o número é PRIMO, pois só foi possível fazer a
+            # divisão inteira com 1 e o próprio número
             print(f"\nO número {numero} foi divisível por {contador} vezes")
             print("E por isso ele É PRIMO!")
             executando = False

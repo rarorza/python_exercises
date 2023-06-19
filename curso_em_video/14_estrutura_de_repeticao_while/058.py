@@ -1,5 +1,6 @@
-# Melhore o jogo do DESAFIO 028 onde o computador vai pensar em um número entre 0 e 10. Só que agora o jogador vai
-# tentar adivinhar até acertar, mostrando no final quantos palpites foram necessários para vencer.
+# Melhore o jogo do DESAFIO 028 onde o computador vai pensar em um número entre 0 e 10. Só que
+# agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites foram
+# necessários para vencer.
 
 from random import randint
 from time import sleep
@@ -9,9 +10,11 @@ tentativas = 0
 acertou = False
 print("Sou seu computador...")
 sleep(0.5)
-print("""Acabei de pensar em um número entre 0 e 10.
+print(
+    """Acabei de pensar em um número entre 0 e 10.
 Será que você consegue adivinhar qual foi?
-""")
+"""
+)
 sleep(0.5)
 
 while not acertou:

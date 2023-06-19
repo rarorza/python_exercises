@@ -1,4 +1,5 @@
-# Crie um programa que leia um frase qualquer e diga se ela é palindromo, desconsiderando os espaços.
+# Crie um programa que leia um frase qualquer e diga se ela é palindromo, desconsiderando os
+# espaços.
 
 frase = input("Digite uma frase: ").replace(" ", "").lower()
 frase_inversa = ""

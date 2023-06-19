@@ -1,5 +1,5 @@
-# Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condições
-# de pagamento:
+# Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço
+# normal e condições de pagamento:
 # - À vista dinheiro/cheque: 10% de desconto
 # - À vista cartão: 5% de desconto
 # - Em até 2x no cartão: preço normal
@@ -32,9 +32,7 @@ elif opcao == 4:
     parcela_opcao = int(input("Quantas parcelas? "))
     parcela_sem_limite = preco_juros / parcela_opcao
     print(f"Sua compra de R${preco_compra:.2f} vai custar R${preco_juros:.2f} no final")
-    print(
-        f"Sua compra será parcelada em {parcela_opcao}x de R$ {parcela_sem_limite:.2f}"
-    )
+    print(f"Sua compra será parcelada em {parcela_opcao}x de R$ {parcela_sem_limite:.2f}")
 else:
     print("Opção inválida")
     print(f"Sua compra de R${preco_compra} vai custar R${preco_compra:.2f} no final")

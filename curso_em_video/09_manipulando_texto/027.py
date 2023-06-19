@@ -1,4 +1,5 @@
-# Faça um programa que leia o nome completo de uma pessoa mostrando em seguida a primeiro e o último nome separadamente.
+# Faça um programa que leia o nome completo de uma pessoa mostrando em seguida a primeiro e o
+# último nome separadamente.
 
 nome = input("Digite seu nome: ").strip().lower().split()
 print(

@@ -1,5 +1,5 @@
-# Faça um programa que calcule a soma entre todos os números impares que são múltiplos de 3 e que se encontram no
-# intervalo de 1 e 500.
+# Faça um programa que calcule a soma entre todos os números impares que são múltiplos de 3 e
+# que se encontram no intervalo de 1 e 500.
 
 soma = 0
 contador = 0
