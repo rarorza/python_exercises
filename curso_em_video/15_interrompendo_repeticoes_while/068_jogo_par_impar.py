@@ -19,7 +19,7 @@ while True:
     print("-" * 30)
 
     if resultado % 2 == 0:
-        print(f"Você jogou {num} e o computador {num_secreto}. Total de {resultado} DEU PAR")
+        print(f"Você jogou {num} e o computador {num_secreto}, total de {resultado}. DEU PAR!")
         if opcao in "Pp":
             print("Você VENCEU!")
             count += 1
@@ -29,7 +29,7 @@ while True:
             print("=-" * 15)
             break
     else:
-        print(f"Você jogou {num} e o computador {num_secreto}. Total de {resultado} DEU IMPAR")
+        print(f"Você jogou {num} e o computador {num_secreto}, total de {resultado}. DEU IMPAR!")
         if opcao in "Ii":
             print("Você VENCEU!")
             count += 1
