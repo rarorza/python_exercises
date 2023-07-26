@@ -11,7 +11,7 @@ persons = []
 gender = ""
 sum_age = 0
 while True:
-    person["Name"] = input("Name: ")
+    person["Name"] = input("Name: ").title()
     while "M" not in gender and "F" not in gender:
         person["Gender"] = gender = input("Gender: [M/F] ").upper().strip()[0]
         if gender not in "MF":
