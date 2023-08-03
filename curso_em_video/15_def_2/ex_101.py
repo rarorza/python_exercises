@@ -16,7 +16,7 @@ def vote(born_year):
     elif 16 <= age < 18 or age >= 70:
         return "OPTIONAL VOTE"
     elif age >= 18:
-        return "MANDATOY VOTE"
+        return "MANDATORY VOTE"
 
 
 print(vote(int(input("Born year: "))))
