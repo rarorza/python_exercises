@@ -1,12 +1,11 @@
-# Adapt the code from challenge 107, creating an additional function called
-# coin(), which can show values as a formatted monetary value. Swapping a dot
-# for a comma.
-# For example: R$ 10,00
+# Create a module called coin.py that has built-in functions increase(),
+# decrease(), double() and half(). Also make a program that imports this module
+# and uses some of these functions.
 
-from coin import increase, decrease, double, half, coin
+from coin import increase, decrease, double, half
 
-num = float(input("Enter a price: R$"))
-print(f"Half of {coin(num)} is {coin(half(num))}")
-print(f"Double {coin(num)} is {coin(double(num))}")
-print(f"Increase of 10%, we have {coin(increase(num, 0.1))}")
-print(f"Decrease of 10%, we have {coin(decrease(num, 0.1))}")
+num = float(input("Enter a price: $"))
+print(f"Half of {num} is {half(num)}")
+print(f"Double {num} is {double(num)}")
+print(f"Increase of 10%, we have {increase(num, 0.1)}")
+print(f"Decrease of 10%, we have {decrease(num, 0.1)}")

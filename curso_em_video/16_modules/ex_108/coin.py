@@ -1,29 +1,23 @@
-def increase(num, percent, format=False):
+def increase(num, percent):
     result = num
     result += num * percent
-    return result if format is False else coin(result)
+    return result
 
 
-def decrease(num, percent, format=False):
+def decrease(num, percent):
     result = num
     result -= num * percent
-    return result if not format else coin(result)
+    return result
 
 
-def double(num, format=False):
+def double(num):
     result = num * 2
-    if format:
-        return coin(result)
-    else:
-        return result
+    return result
 
 
-def half(num, format=False):
+def half(num):
     result = num / 2
-    if format:
-        return coin(result)
-    else:
-        return result
+    return result
 
 
 def coin(value, coin="R$"):

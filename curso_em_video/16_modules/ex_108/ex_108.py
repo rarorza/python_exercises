@@ -1,11 +1,12 @@
-# Modify the functions that were created in challenge 107 so that they accept
-# one more parameter, informing whether or not the value returned by them will
-# be formatted by the coin() function, developed in challenge 108
+# Adapt the code from challenge 107, creating an additional function called
+# coin(), which can show values as a formatted monetary value. Swapping a dot
+# for a comma.
+# For example: R$ 10,00
 
 from coin import increase, decrease, double, half, coin
 
 num = float(input("Enter a price: R$"))
-print(f"Half of {coin(num)} is {half(num, format=True)}")
-print(f"Double {coin(num)} is {double(num, format=True)}")
-print(f"Increase of 10%, we have {increase(num, 0.1, format=True)}")
-print(f"Decrease of 10%, we have {decrease(num, 0.1, format=True)}")
+print(f"Half of {coin(num)} is {coin(half(num))}")
+print(f"Double {coin(num)} is {coin(double(num))}")
+print(f"Increase of 10%, we have {coin(increase(num, 0.1))}")
+print(f"Decrease of 10%, we have {coin(decrease(num, 0.1))}")

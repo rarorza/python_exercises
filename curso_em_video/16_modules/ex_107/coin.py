@@ -18,8 +18,3 @@ def double(num):
 def half(num):
     result = num / 2
     return result
-
-
-def coin(value, coin="R$"):
-    result = f"{value:.2f}"
-    return coin + result.replace(".", ",")

@@ -1,40 +1,22 @@
-# Develop a program that has a grades() function that can receive several grades
-# from students and will return a dictionary with the following information:
-#
-# - Number of notes
-# - the highest grade
-# - The lowest grade
-# - The average of the class
-# - The situation (optional)
-# Also add the docstring.
+# Create a program that has the readInt() function, which will work similarly to
+# Python's input() function, only doing the validation to accept only a numeric
+# value.
+# Ex:
+# n = readInt('Enter a number')
 
 
-def grades(*n, situation=False):
-    """Function to analyze grades and situation of several students
-
-    Keyword arguments:
-    n -- one or more student grades (accepts multiple)
-    situation -- optional value, indicating whether or not to add the status of
-    the class
-    Return: dictionary with various information about the situation of the class
-    """
-    class_dic = {
-        "total": len(n),
-        "biggest": max(n),
-        "smallest": min(n),
-        "average": sum(n) / len(n),
-    }
-    if situation:
-        if class_dic.get("average") >= 7:
-            class_dic["situation"] = "GOOD"
-        if 5 <= class_dic.get("average") < 7:
-            class_dic["situation"] = "MORE OR LESS"
-        if class_dic.get("average") < 5:
-            class_dic["situation"] = "BAD"
-
-    return class_dic
+def read_int(text=None):
+    while True:
+        if text:
+            print(text, end="")
+        try:
+            n = int(input())
+            break
+        except:
+            print("Error! Please enter a valid integer.")
+    return n
 
 
-class_situation = grades(5, 6, 6, situation=True)
-print(class_situation)
-help(grades)
+n = read_int("Enter a number: ")
+print(f"You just enter the number {n}")
+# Obs: could be solved with isnumeric
