@@ -2,6 +2,7 @@
 # the command and the manual will appear. When the user types "END", the program
 # will exit.
 
+
 def pyHelper():
     while True:
         print("~" * 30)
